@@ -8,20 +8,13 @@ To build strong cloud and DevOps skills by practicing AWS services and documenti
 
 ## 📂 Folder Structure (Planned)
 AmazonWebServices/
-│
-├─ cloudwatch-ec2-logs/
-│
-├─ ec2-webserver-setup/
-│
-├─ vpc-three-tier-architecture/
-│
-├─ s3-hosting-static-website/
-│
-├─ iam-lab-policies-users/
-│
-├─ lambda-eventbridge-automation/
-│
-└─ rds-database-setup/
+  cloudwatch-ec2-logs/
+	ec2-webserver-setup/
+	vpc-three-tier-architecture/
+	s3-hosting-static-website/
+	iam-lab-policies-users/
+	lambda-eventbridge-automation/
+	rds-database-setup/
 
 More labs will be added continuously as I learn.
 
