@@ -1,67 +1,63 @@
-=========================================
-🚀 CloudWatch EC2 Logs Setup – Step-by-Step
-=========================================
+# 🚀 CloudWatch EC2 Logs Setup – Step-by-Step
 
------------------------------------------
-🔹 Prerequisites
------------------------------------------
-✔ Launch an EC2 instance using Amazon linux AMI
-✔ Attach IAM Role with policy: CloudWatchAgentServerPolicy or you can give CloudWatchFullAccess
+## 🔹 Prerequisites
+- Launch an EC2 instance using Amazon Linux AMI
+- Attach IAM Role with policy: CloudWatchAgentServerPolicy or CloudWatchFullAccess
 
------------------------------------------
-🔹 Step 1 — Install CloudWatch Agent
------------------------------------------
-Run the command:
+---
+
+## 🔹 Step 1 — Install CloudWatch Agent
+
+```bash
 sudo yum install amazon-cloudwatch-agent -y
+```
 
-This installs the CloudWatch agent needed to push logs to CloudWatch.
+---
 
------------------------------------------
-🔹 Step 2 — Update CloudWatch config file
------------------------------------------
-Open the config file using vi editor:
+## 🔹 Step 2 — Update CloudWatch config file
+
+```bash
 sudo vi /opt/aws/amazon-cloudwatch-agent/etc/amazon-cloudwatch-agent.json
+```
 
-Press 'i' to enter insert mode and paste the JSON configuration copied from this repository (cloudwatch-ec2-logs-lab/config/amazon-cloudwatch-agent.json).
+- Press `i` to enter insert mode and paste the JSON configuration from the repository (`cloudwatch-ec2-logs-lab/config/amazon-cloudwatch-agent.json`)  
+- Save and exit: `Esc` → `:wq` → `Enter`
 
-Save and exit:
-Press ESC
-:type  :wq   and press Enter
+---
 
------------------------------------------
-🔹 Step 3 — Start and Enable the Agent
------------------------------------------
-Run the following commands:
+## 🔹 Step 3 — Start and Enable the Agent
+
+```bash
 sudo systemctl enable amazon-cloudwatch-agent
 sudo systemctl start amazon-cloudwatch-agent
+```
 
------------------------------------------
-🔹 Step 4 — Verify Agent Status
------------------------------------------
-Check if the agent is running:
+---
+
+## 🔹 Step 4 — Verify Agent Status
+
+```bash
 sudo systemctl status amazon-cloudwatch-agent
+```
 
-If it is running successfully, logs are now being pushed to CloudWatch.
+---
 
------------------------------------------
-🔹 Step 5 — Validate in AWS Console
------------------------------------------
-Go to:
-CloudWatch → Logs → Log groups
+## 🔹 Step 5 — Validate in AWS Console
+- Go to CloudWatch → Logs → Log groups  
+- You will see the log group used inside the JSON (example: `/ec2/cloud-init-log`)  
+- Click the log group → select the log stream (instance-id) → log events will appear
 
-You will see the log group used inside the JSON, for example:
-/ec2/cloud-init-log
+---
 
-Click the log group → select the log stream (instance-id) → log events will appear.
+## 💡 Notes
+- If JSON is updated, restart the agent:
 
------------------------------------------
-💡 Notes
------------------------------------------
-• If JSON is updated, restart the agent:
-  sudo systemctl restart amazon-cloudwatch-agent
+```bash
+sudo systemctl restart amazon-cloudwatch-agent
+```
 
-• Multiple log files can be added with additional "collect_list" entries inside the JSON.
+- Multiple log files can be added with additional `"collect_list"` entries inside the JSON
 
-=========================================
-🎉 Setup Completed — Logs are now visible in CloudWatch
-=========================================
+---
+
+🎉 **Setup Completed — Logs are now visible in CloudWatch**
