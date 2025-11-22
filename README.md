@@ -13,7 +13,7 @@ To build strong cloud and DevOps skills by practicing AWS services and documenti
 ## 📂 Folder Structure (Planned)
 Each AWS service will have a separate folder, for example:
 
-aws-labs/
+AmazonWebServices/
 │
 ├─ cloudwatch-ec2-logs/
 ├─ ec2-webserver-setup/
