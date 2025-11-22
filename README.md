@@ -1,13 +1,12 @@
-🚀 AWS Practice Labs Repository
+# 🚀 AWS Practice Labs Repository
 
 Welcome to my AWS learning and practice repository!
 This repository contains hands-on labs, configuration files, troubleshooting notes, and command references for various AWS services that I practice every day.
 
-📌 Objective
-
+## 📌 Objective
 To build strong cloud and DevOps skills by practicing AWS services and documenting everything in one place for future reference and interview preparation.
 
-📂 Folder Structure (Planned)
+## 📂 Folder Structure (Planned)
 AmazonWebServices/
 │
 ├─ cloudwatch-ec2-logs/
@@ -24,40 +23,27 @@ AmazonWebServices/
 │
 └─ rds-database-setup/
 
-
 More labs will be added continuously as I learn.
 
-🧾 What each lab contains
-
+## 🧾 What each lab contains
 Inside every folder you will find:
+- README.md → lab explanation & steps
+- config/ → configuration files
+- commands/ → CLI commands
+- screenshots/ → (optional) proof of output
 
-README.md → lab explanation & steps
+## 🚀 Goal
+- Practice AWS services
+- Document all labs professionally
+- Build confidence for job interviews
+- Showcase skills to recruiters through GitHub portfolio
 
-config/ → configuration files
+## 📌 Status
+Work in progress — new labs will be added regularly.
 
-commands/ → CLI commands
-
-screenshots/ → (optional) proof of output
-
-🚀 Goal
-
-Practice AWS services
-
-Document all labs professionally
-
-Build confidence for job interviews
-
-Showcase skills to recruiters through GitHub portfolio
-
-📌 Status
-
-🔄 Work in progress — new labs will be added regularly.
-
-🙌 Contributions
-
+## 🙌 Contributions
 This repository is mainly for my personal learning, but suggestions are welcome.
 
-💡 Author
-
+## 💡 Author
 Basa Sairaj Netha
-Passionate about MultiCloud • DevOps • Networking • CyberSecurity
+Passionate about Multi-Cloud • DevOps • Networking • CyberSecurity • DataScience
