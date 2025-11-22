@@ -20,7 +20,8 @@ sudo yum install amazon-cloudwatch-agent -y
 sudo vi /opt/aws/amazon-cloudwatch-agent/etc/amazon-cloudwatch-agent.json
 ```
 
-- Press `i` to enter insert mode and paste the JSON configuration from the repository (`cloudwatch-ec2-logs-lab/config/amazon-cloudwatch-agent.json`)  
+- Press `i` to enter insert mode  
+- Paste the JSON configuration from the repository (`cloudwatch-ec2-logs-lab/config/amazon-cloudwatch-agent.json`)  
 - Save and exit: `Esc` → `:wq` → `Enter`
 
 ---
