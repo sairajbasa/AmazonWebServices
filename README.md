@@ -7,6 +7,8 @@ This repository contains hands-on labs, configuration files, troubleshooting not
 To build strong cloud and DevOps skills by practicing AWS services and documenting everything in one place for future reference and interview preparation.
 
 ## 📂 Folder Structure (Planned)
+
+```
 AmazonWebServices/
 ├── cloudwatch-ec2-logs/
 ├── ec2-webserver-setup/
@@ -15,6 +17,8 @@ AmazonWebServices/
 ├── iam-lab-policies-users/
 ├── lambda-eventbridge-automation/
 └── rds-database-setup/
+```
+
 
 More labs will be added continuously as I learn.
 
