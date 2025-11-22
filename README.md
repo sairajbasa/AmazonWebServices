@@ -16,12 +16,19 @@ Each AWS service will have a separate folder, for example:
 AmazonWebServices/
 │
 ├─ cloudwatch-ec2-logs/
+│
 ├─ ec2-webserver-setup/
+│
 ├─ vpc-three-tier-architecture/
+│
 ├─ s3-hosting-static-website/
+│
 ├─ iam-lab-policies-users/
+│
 ├─ lambda-eventbridge-automation/
+│
 └─ rds-database-setup/
+
 
 More labs will be added continuously as I learn.
 
