@@ -8,9 +8,6 @@ This repository contains hands-on labs, configuration files, troubleshooting not
 To build strong cloud and DevOps skills by practicing AWS services and documenting everything in one place for future reference and interview preparation.
 
 📂 Folder Structure (Planned)
-
-Each AWS service will have a separate folder:
-
 AmazonWebServices/
 │
 ├─ cloudwatch-ec2-logs/
@@ -34,17 +31,23 @@ More labs will be added continuously as I learn.
 
 Inside every folder you will find:
 
-Folder / File	Description
-README.md	Lab explanation & steps
-config/	Configuration files used in the lab
-commands/	CLI commands
-screenshots/	(Optional) Proof of output
+README.md → lab explanation & steps
+
+config/ → configuration files
+
+commands/ → CLI commands
+
+screenshots/ → (optional) proof of output
+
 🚀 Goal
 
-✔ Practice AWS services
-✔ Document all labs professionally
-✔ Build confidence for job interviews
-✔ Showcase skills to recruiters through GitHub portfolio
+Practice AWS services
+
+Document all labs professionally
+
+Build confidence for job interviews
+
+Showcase skills to recruiters through GitHub portfolio
 
 📌 Status
 
@@ -57,4 +60,4 @@ This repository is mainly for my personal learning, but suggestions are welcome.
 💡 Author
 
 Basa Sairaj Netha
-Passionate about Cloud • DevOps • Networking • Security
+Passionate about MultiCloud • DevOps • Networking • CyberSecurity
